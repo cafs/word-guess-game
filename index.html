@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman Game</title>
+    <!-- Bootstrap 4 w CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1>Hangman!</h1>
+            <p>Guess letters to discover the hidden word.</p>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="panel-title">word to guess</div>
+            </div>
+            <div class="panel-body">
+                <h2>_ _ _ _ _ _ _</h2>
+            </div>
+        </div>
+        
+        <div class="panel panel-default">
+            <div class="panel-body">
+                letters already guessed: <span id="lettersGuessed">0</span>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                number of guesses remaining: <span id="numRemaining">0</span>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                wins: <span id="numWins">0</span>
+            </div>
+        </div>
+
+
+        
+    </div>
+
+
+</body>
+</html>
