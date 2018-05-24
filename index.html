@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hangman Game</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
     <!-- Bootstrap 4 w CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
@@ -24,7 +25,7 @@
                 <div class="panel-title">word to guess</div>
             </div>
             <div class="panel-body">
-                <h2>_ _ _ _ _ _ _</h2>
+                <h2 id="wordToGuess">_ _ _ _ _ _ _</h2>
             </div>
         </div>
         
@@ -36,19 +37,20 @@
 
         <div class="panel panel-default">
             <div class="panel-body">
-                number of guesses remaining: <span id="numRemaining">0</span>
+                number of guesses remaining: <span id="guessesLeft">0</span>
             </div>
         </div>
 
         <div class="panel panel-default">
             <div class="panel-body">
-                wins: <span id="numWins">0</span>
+                wins: <span id="winsCounter">0</span>
             </div>
         </div>
-
-
         
     </div>
+
+    <!-- JavaScript src link -->
+    <script src="assets/javascript/game.js"></script>
 
 
 </body>
