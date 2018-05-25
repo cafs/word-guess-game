@@ -47,10 +47,11 @@ function startGame () {
 
 function checkUSerGuess(letter) {
     // check the user key click against letters in word
-    let lettersInWord = false;
-
-    for (let i = 0; i<)blankSpaces; i++) {
-
+    let letterFound = false;
+    for (let i = 0; i<blankSpaces; i++) {
+        if(selectedWord[i] === letter) {
+            letterFound = true;
+        }
     }
 
 }
