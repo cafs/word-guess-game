@@ -9,46 +9,51 @@
     <!-- Bootstrap 4 w CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <div class="container">
+    <div id="gradient">
 
-        <div class="jumbotron">
-            <h1>Hangman!</h1>
-            <p>Guess letters to discover the hidden word.</p>
+        <div class="container">
+
+            <div class="jumbotron jumbotron-fluid">
+                <h1 class="display-4">HANGMAN</h1>
+                <p class="lead">Guess Letters To Discover The Hidden Word</p>
+            </div>
+
+            <div class="card card-default">
+                <div class="card-heading">
+                    <div class="card-title">Guess This Word</div>
+                </div>
+                <div class="card-body">
+                    <h2 id="wordToGuess"></h2>
+                </div>
+            </div>
+            
+            <div class="card card-default game-results">
+                <div class="card-body"><strong>Wrong Letters:</strong> <span id="wrongLetters"></span></div>
+            </div>
+
+            <div class="card card-default game-results">
+                <div class="card-body"><strong>Guesses Left:</strong> <span id="guessesLeft">0</span></div>
+            </div>
+
+            <div class="card card-default game-results">
+                <div class="card-body"><strong>Wins:</strong> <span id="winsCounter">0</span></div>
+            </div>
+
+            <div class="cartoon">
+                <img class="hangmanFunny" src="http://img1.joyreactor.com/pics/post/comics-medieval-hangman-623071.jpeg" alt="Midevil Hangman cartoon">
+            </div>
+            
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <div class="panel-title">word to guess</div>
-            </div>
-            <div class="panel-body">
-                <h2 id="wordToGuess">_ _ _ _ _ _ _</h2>
-            </div>
-        </div>
-        
-        <div class="panel panel-default">
-            <div class="panel-body">
-                letters already guessed: <span id="lettersGuessed">0</span>
-            </div>
-        </div>
-
-        <div class="panel panel-default">
-            <div class="panel-body">
-                number of guesses remaining: <span id="guessesLeft">0</span>
-            </div>
-        </div>
-
-        <div class="panel panel-default">
-            <div class="panel-body">
-                wins: <span id="winsCounter">0</span>
-            </div>
-        </div>
-        
     </div>
 
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <!-- JavaScript src link -->
     <script src="assets/javascript/game.js"></script>
 
